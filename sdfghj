@@ -1,0 +1,28 @@
+    const fruitsitems = document.getElementById('fruits-items');
+    const legumsitems = document.getElementById('legums-items');
+    const bothitems = document.getElementById('both-items');
+
+    const fruitsitems = [
+        { type:'Fruits!',Name:'Apple' },
+        { type:'Fruits!',Name:'Mangoes' },
+        // Add more appointment data as needed
+    ];
+
+    const legumsitems = [
+        { type:'Legumes!',Name:'Broccoli' },
+        { type:'Legumes!',Name:'Green Beans' },
+        // Add more appointment data as needed
+    ];
+
+    const bothitems = [
+        { type:'Fruits!',Name:'Pineapples' },
+        { type:'Fruits!',Name:'Bananas' },
+        { type:'Legumes!',Name:'Potato' },
+        { type:'Legumes!',Name:'Lentils' },
+    ];
+
+        let data="";
+        for (let i = 0; i < fruitsitems.length; i++) {
+            data += '<div>'+type$[i]+' - '+Name$[i]+'</div>';
+        }
+        fruitsitems.innerHTML=data;
